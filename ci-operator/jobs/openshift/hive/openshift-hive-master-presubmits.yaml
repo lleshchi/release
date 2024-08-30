@@ -406,7 +406,8 @@ presubmits:
         command:
         - ci-operator
         env:
-        - 
+        - name: JOB_NAME_SAFE
+          value: hive-vsphere
         image: ci-operator:latest
         imagePullPolicy: Always
         name: ""
